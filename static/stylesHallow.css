@@ -1,0 +1,74 @@
+/* ==========================================
+   TEMA COMPLETO: DÍA DE MUERTOS
+   ========================================== */
+
+/* 1. Cambiar el fondo de TODO el cuerpo de la página a tono nocturno */
+body {
+    background-color: #121214 !important;
+    color: #f4f4f5 !important;
+}
+
+/* 2. Oscurecer y estilizar la barra de navegación para que combine */
+.custom-navbar {
+    background-color: #1a1a1e !important;
+    border-bottom: 2px solid #ff7b00 !important; /* Línea cempasúchil */
+}
+
+/* Hacer que los textos y enlaces del menú brillen con claridad */
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: #e4e4e7 !important;
+    font-weight: 500;
+}
+
+.custom-navbar .nav-link:hover {
+    color: #ff9100 !important; /* Tono cempasúchil al pasar el mouse */
+}
+
+/* 3. Ajuste de las tarjetas de contenido */
+.content-card {
+    background-color: #1a1a1e !important;
+    border: 1px solid #ff7b00 !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8) !important;
+    color: #f4f4f5 !important;
+    margin-top: 3rem; /* Lo separa un poco más de la barra de arriba */
+}
+
+/* Títulos principales bien encendidos */
+.content-card .page-title,
+.content-card h1 {
+    color: #ff9100 !important;
+    font-weight: 800 !important;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* Textos legibles */
+.content-card p, 
+.content-card li {
+    color: #d4d4d8 !important;
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+/* Destacar el mensaje dinámico */
+.content-card p:nth-of-type(1) {
+    color: #22d3ee !important;
+    font-weight: 600;
+}
+
+/* Detalles decorativos en los bordes por sección */
+.card-home-hallow {
+    border-top: 6px solid #ff7b00 !important;
+}
+
+.card-catalogo-hallow {
+    border-left: 6px solid #c084fc !important;
+}
+
+.card-servicios-hallow {
+    border-right: 6px solid #06b6d4 !important;
+}
+
+.card-contacto-hallow {
+    border-bottom: 6px solid #ec4899 !important;
+}

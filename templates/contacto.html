@@ -1,7 +1,12 @@
 {% extends "layout.html" %}
+
+{% block extra_css %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='stylesHallow.css') }}">
+{% endblock %}
+
 {% block content %}
-    <div class="container-fluid">
-        <h1>BIBLIOTECA ICO</h1>
+    <div class="content-card card-contacto-hallow">
+        <h1 class="page-title">BIBLIOTECA ICO</h1>
         <p>{{ mensaje }}</p>
         <p>Dirección: Calle Principal, 123</p>
         <p>Teléfono: 123-456-7890</p>
