@@ -72,3 +72,15 @@ body {
 .card-contacto-hallow {
     border-bottom: 6px solid #ec4899 !important;
 }
+
+.card-centro-servicios-hallow {
+    color: #1a1a1e !important;
+        font-weight: 500;
+
+}
+
+.mi-carrusel img {
+    height: 400px;         /* Mantiene la altura fija que elegiste */
+    object-fit: contain;   /* Muestra la imagen completa sin recortarla */
+    background-color: #121214; /* Rellena los espacios vacíos con el color de fondo nocturno */
+}

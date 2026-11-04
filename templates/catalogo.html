@@ -1,16 +1,52 @@
 {% extends "layout.html" %}
 
 {% block extra_css %}
-    <link rel="stylesheet" href="{{ url_for('static', filename='stylesHallow.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='stylesHallow.css') }}">
 {% endblock %}
 
 {% block content %}
-    <div class="content-card card-catalogo-hallow">
-        <h1 class="page-title">BIBLIOTECA ICO</h1>
-        <p>{{ mensaje }}</p>
-        <p>Categorías de libros disponibles</p>
-        <p>Libros de programación</p>
-        <p>Libros de diseño</p>
-        <p>Libros de administración</p>
+<div class="content-card card-catalogo-hallow text-center">
+    <h1 class="page-title">BIBLIOTECA ICO</h1>
+    
+    <!-- Contenedor del carrusel con textos dinámicos integrados -->
+    <div id="carouselExampleControls" class="carousel slide mi-carrusel mt-4" data-ride="carousel">
+
+        <div class="carousel-inner">
+
+            <!-- Elemento 1: Libros -->
+            <div class="carousel-item active">
+                <span class="badge badge-pill badge-warning mb-2 px-3 py-2 font-weight-bold" style="font-size: 1rem;">Libros</span>
+                <p class="text-light mb-3">Contamos con una amplia selección de libros en diferentes categorías.</p>
+                <img src="{{ url_for('static', filename='img/biblioteca/bibliotecalib.jpeg') }}" class="d-block w-100 rounded" alt="Libros">
+            </div>
+
+            <!-- Elemento 2: Revistas -->
+            <div class="carousel-item">
+                <span class="badge badge-pill badge-info mb-2 px-3 py-2 font-weight-bold" style="font-size: 1.05rem;">Revistas</span>
+                <p class="text-light mb-3">Préstamos de revistas disponibles durante el horario de atención.</p>
+                <img src="{{ url_for('static', filename='img/biblioteca/bibliotecarev.jpeg') }}" class="d-block w-100 rounded" alt="Revistas">
+            </div>
+
+            <!-- Elemento 3: Computadoras -->
+            <div class="carousel-item">
+                <span class="badge badge-pill badge-success mb-2 px-3 py-2 font-weight-bold" style="font-size: 1.05rem;">Equipos de Cómputo</span>
+                <p class="text-light mb-3">Acceso a computadoras para prácticas e investigación académica.</p>
+                <img src="{{ url_for('static', filename='img/biblioteca/bibliotecacompu.jpeg') }}" class="d-block w-100 rounded" alt="Computadoras">
+            </div>
+
+        </div>
+
+        <!-- Controles de navegación -->
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Siguiente</span>
+        </a>
+
     </div>
+</div>
 {% endblock %}

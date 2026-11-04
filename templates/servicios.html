@@ -8,9 +8,13 @@
     <div class="content-card card-servicios-hallow">
         <h1 class="page-title">BIBLIOTECA ICO</h1>
         <p>{{ mensaje }}</p>
-        <p>Prestamos de libros: Maximo 3 libros al momento</p>
-        <p>Préstamos de revistas: Disponibles durante el horario de atención</p>
-        <p>Acceso a computadoras: Préstamo de equipos necesitados por el usuario</p>
-        <p>Orientación bibliográfica: Disponible durante el horario de atención</p>
+    <div class="card" style="width: 18rem;">
+        <img src="{{ url_for('static', filename='img/biblioteca/bibliotecaserv.jpeg') }}" class="card-img-top" alt="Servicios de Alfeñique">
+        <div class="card-body">
+            <h5 class="card-centro-servicios-hallow">Centro de Servicios</h5>
+            <p class="card-text">Ofrecemos una amplia variedad de servicios para satisfacer las necesidades de nuestros usuarios.</p>
+            <a href="#" class="btn btn-primary">Ver más información</a>
+        </div>
     </div>
+</div>
 {% endblock %}
