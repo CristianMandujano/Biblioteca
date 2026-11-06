@@ -20,4 +20,4 @@ def catalogo():
     return render_template('catalogo.html', title="Catálogo", mensaje="Contamos con una amplia selección de libros en diferentes categorías.")
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5050)
+    app.run(debug=True, host="0.0.0.0")
